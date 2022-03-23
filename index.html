@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Mayk Brito - DoWhile 2021</title>
+    <title>Kauê Rocha - DoWhile 2021</title>
 
     <link rel="stylesheet" href="style.css" />
 
@@ -24,16 +24,16 @@
           <img src="images/foto de perfil (2).jpeg" alt="Foto pessoal" />
         </div>
 
-        <h1>Kauê Rocha</h1>
+        <h1 id="userName">Kauê Rocha</h1>
         <a href="https://github.com/KaueRochaVieira" target="_blank">
           <img src="images/github 2.svg" alt="ícone github" />
           KaueRochaVieira</a
         >
 
-        <p>An instructor focused on helping pople start programming for web</p>
+        <p>A Jr Front End Developer focused on evolving</p>
 
-        <ul>
-          <li>
+        <ul id="socialLinks">
+          <li class="youtube">
             <a
               href="https://www.youtube.com/channel/UCODHB8ZXqJvUyyWdDcvm-sg"
               target="_blank"
@@ -41,7 +41,7 @@
               <img src="images/youtube.svg" alt="ícone youtube" />
             </a>
           </li>
-          <li>
+          <li class="facebook">
             <a
               href="https://www.facebook.com/kaue.rochavieira/"
               target="_blank"
@@ -49,18 +49,40 @@
               <img src="images/facebook.svg" alt="ícone facebook" />
             </a>
           </li>
-          <li>
+          <li class="instagram">
             <a href="https://instagram.com/kaue_rochaa" target="_blank">
               <img src="images/instagram.svg" alt="ícone instagram" />
             </a>
           </li>
-          <li>
-            <a href="https://twitter.com/" target="_blank">
+          <li class="twitter">
+            <a href="https://twitter.com/rochaa_kaue" target="_blank">
               <img src="images/twitter.svg" alt="ícone twitter" />
             </a>
           </li>
         </ul>
       </div>
     </main>
+
+    <script>
+      const linksSocialMedia = {
+        github: 'KaueRochaVieira',
+        youtube: 'channel/UCODHB8ZXqJvUyyWdDcvm-sg',
+        facebook: 'kaue.rochavieira',
+        instagram: 'kaue_rochaa',
+        twitter: 'rochaa_kaue'
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+
+          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
+
+          alert(li.children[0].href)
+        }
+      }
+
+      changeSocialMediaLinks()
+    </script>
   </body>
 </html>
