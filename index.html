@@ -21,16 +21,24 @@
           <span>
             <img src="images/build.svg" alt="Selo Rocketseat" />
           </span>
-          <img src="images/foto de perfil (2).jpeg" alt="Foto pessoal" />
+          <img
+            src="images/foto de perfil (2).jpeg"
+            alt="Foto pessoal"
+            id="userImage"
+          />
         </div>
 
         <h1 id="userName">Kauê Rocha</h1>
-        <a href="https://github.com/KaueRochaVieira" target="_blank">
-          <img src="images/github 2.svg" alt="ícone github" />
-          KaueRochaVieira</a
+        <a
+          id="userLink"
+          href="https://github.com/KaueRochaVieira"
+          target="_blank"
         >
+          <img src="images/github 2.svg" alt="ícone github" />
+          <span id="userLogin">KaueRochaVieira</span>
+        </a>
 
-        <p>A Jr Front End Developer focused on evolving</p>
+        <p id="userBio">A Jr Front End Developer focused on evolving</p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -63,26 +71,6 @@
       </div>
     </main>
 
-    <script>
-      const linksSocialMedia = {
-        github: 'KaueRochaVieira',
-        youtube: 'channel/UCODHB8ZXqJvUyyWdDcvm-sg',
-        facebook: 'kaue.rochavieira',
-        instagram: 'kaue_rochaa',
-        twitter: 'rochaa_kaue'
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
-
-          alert(li.children[0].href)
-        }
-      }
-
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
