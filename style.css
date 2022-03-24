@@ -15,6 +15,7 @@ body {
 body {
   display: grid;
   place-items: center;
+  font-size: 62.5%;
 }
 
 main {
@@ -22,6 +23,10 @@ main {
   width: 100vw;
   min-height: 812px;
   height: 100vh;
+}
+
+#laco .pretinho {
+  display: none;
 }
 
 .container {
@@ -87,4 +92,50 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+@media (min-width: 960px) {
+  body {
+    filter: brightness(90%);
+    background: url(images/background.svg) no-repeat center/cover;
+  }
+
+  main {
+    max-width: 450px;
+    max-height: 750px;
+    position: relative;
+  }
+
+  #laco {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  #laco .pretinho {
+    display: inline-block;
+  }
+
+  .pretinho {
+    width: 25%;
+    background-color: black;
+    position: absolute;
+    top: 1.6rem;
+    height: 0.8rem;
+  }
+
+  .pretinho::before {
+    display: inline-block;
+    content: '';
+    width: 64px;
+    height: 158px;
+    background: linear-gradient(to right bottom, red, black);
+    position: inherit;
+    /* top: -1000%; */
+    bottom: 6px;
+    right: 50%;
+    transform: translate(50%);
+  }
 }
