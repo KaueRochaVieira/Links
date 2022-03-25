@@ -67,6 +67,7 @@ h1 {
 
 a {
   color: var(--grey);
+  font-size: 15;
   text-decoration: none;
 
   margin-top: 0.25rem;
@@ -78,8 +79,41 @@ a {
   align-items: center;
 }
 
+#userLogin {
+  font-size: 12px;
+  position: relative;
+  transition: all 0.5s;
+  border: 10px solid transparent;
+}
+
+#userLogin:hover {
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+
+#userLogin::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#userLogin:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 p {
   margin-top: 2rem;
+  font-size: 12px;
 }
 
 ul {
@@ -92,6 +126,30 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+#socialLinks {
+  margin-top: 20px;
+}
+
+.facebook:hover::after {
+  content: 'kaue.rochavieira';
+  font-size: 10px;
+}
+
+.instagram:hover::after {
+  content: '@kaue_rochaa';
+  font-size: 10px;
+}
+
+.twitter:hover::after {
+  content: 'rochaa_kaue';
+  font: 10px;
+}
+
+.youtube:hover::after {
+  content: 'Kaue RV';
+  font-size: 10px;
 }
 
 @media (min-width: 960px) {
