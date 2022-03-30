@@ -2,7 +2,7 @@ const linksSocialMedia = {
   github: 'KaueRochaVieira',
   youtube: 'channel/UCODHB8ZXqJvUyyWdDcvm-sg',
   facebook: 'kaue.rochavieira',
-  instagram: 'kaue_rochaa',
+  instagram: 'krv_portfolio',
   twitter: 'rochaa_kaue'
 }
 
