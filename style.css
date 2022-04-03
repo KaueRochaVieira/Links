@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  background: url(images/background.svg) no-repeat center/cover;
+  background: url(images/background1\ 3.svg) no-repeat center/cover;
   width: 100vw;
   min-height: 812px;
   height: 100vh;
@@ -98,7 +98,7 @@ a {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: red;
+  background-color: #1b1936;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
@@ -155,7 +155,7 @@ ul {
 @media (min-width: 960px) {
   body {
     filter: brightness(90%);
-    background: url(images/background.svg) no-repeat center/cover;
+    background: url(images/background1\ 3.svg) no-repeat center/cover;
   }
 
   main {
@@ -189,7 +189,7 @@ ul {
     content: '';
     width: 64px;
     height: 158px;
-    background: linear-gradient(to right bottom, red, black);
+    background: linear-gradient(to right bottom, #22274f, #1b1936);
     position: inherit;
     /* top: -1000%; */
     bottom: 6px;
